@@ -8,6 +8,7 @@ const YukinaConfig: Configuration = {
 
   description: "Demo Site",
 
+  //TODO: add new URL
   site: "https://yukina-blog.vercel.app",
 
   locale: "en", // set for website language and date format
@@ -27,13 +28,13 @@ const YukinaConfig: Configuration = {
     },
     {
       nameKey: I18nKeys.nav_bar_github,
-      href: "https://github.com/WhitePaper233/yukina",
+      href: "https://github.com/Bg-Ch-git/Blog",
     },
   ],
 
-  username: "WhitePaper 白芷",
-  sign: "Ad Astra Per Aspera.",
-  avatarUrl: "https://s2.loli.net/2025/01/25/FPpTrQSezM8ivbl.webp",
+  username: "Bg. Ch.",
+  sign: "Just a sweet Bun",
+  avatarUrl: "/images/avatar.jpg",
   socialLinks: [
     {
       icon: "line-md:github-loop",
@@ -54,14 +55,25 @@ const YukinaConfig: Configuration = {
   maxFooterTagChip: 24,
 
   banners: [
-    "https://s2.loli.net/2025/01/25/PBvHFjr5yDu6t4a.webp",
-    "https://s2.loli.net/2025/01/25/6bKcwHZigzlM4mJ.webp",
-    "https://s2.loli.net/2025/01/25/H9WgEK6qNTcpFiS.webp",
-    "https://s2.loli.net/2025/01/25/njNVtuUMzxs81RI.webp",
-    "https://s2.loli.net/2025/01/25/tozsJ8QHAjFN3Mm.webp",
-    "https://s2.loli.net/2025/01/25/Pm89OveZq7NWUxF.webp",
-    "https://s2.loli.net/2025/01/25/UCYKvc1ZhgPHB9m.webp",
-    "https://s2.loli.net/2025/01/25/JjpLOW8VSmufzlA.webp",
+    "/banners/banner1.jpg",
+    "/banners/banner2.jpg",
+    "/banners/banner3.jpg",
+    "/banners/banner4.jpg",
+    "/banners/banner5.jpg",
+    "/banners/banner6.jpg",
+    "/banners/banner7.jpg",
+    "/banners/banner8.jpg",
+    "/banners/banner9.jpg",
+    "/banners/banner10.jpg",
+    "/banners/banner11.jpg",
+    //"https://s2.loli.net/2025/01/25/PBvHFjr5yDu6t4a.webp",
+    //"https://s2.loli.net/2025/01/25/6bKcwHZigzlM4mJ.webp",
+    //"https://s2.loli.net/2025/01/25/H9WgEK6qNTcpFiS.webp",
+    //"https://s2.loli.net/2025/01/25/njNVtuUMzxs81RI.webp",
+    //"https://s2.loli.net/2025/01/25/tozsJ8QHAjFN3Mm.webp",
+    //"https://s2.loli.net/2025/01/25/Pm89OveZq7NWUxF.webp",
+    //"https://s2.loli.net/2025/01/25/UCYKvc1ZhgPHB9m.webp",
+    //"https://s2.loli.net/2025/01/25/JjpLOW8VSmufzlA.webp",
   ],
 
   slugMode: "HASH", // 'RAW' | 'HASH'
