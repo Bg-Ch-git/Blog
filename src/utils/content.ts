@@ -61,6 +61,37 @@ export async function GetSortedPosts() {
 }
 
 /**
+ * Retrieves and sorts music albums by their published date.
+ *
+ * This function fetches all music albums from the "repository" collection, filters out drafts if in production mode,
+ * and sorts them in descending order by their published date. It also adds `nextSlug`, `nextTitle`, `prevSlug`,
+ * and `prevTitle` properties to each post for navigation purposes.
+ *
+ * @returns A promise that resolves to an array of sorted music albums with navigation properties.
+ */
+export async function GetSortedMusicPosts() {
+  const allBlogPosts = await getCollection("repository", ({ data }) => {
+    return import.meta.env.PROD ? data.draft !== true : true;
+  });
+  const sorted = allBlogPosts.sort((a, b) => {
+    const dateA = new Date(a.data.published);
+    const dateB = new Date(b.data.published);
+    return dateA > dateB ? -1 : 1;
+  });
+
+  for (let i = 1; i < sorted.length; i++) {
+    (sorted[i].data as any).nextSlug = (sorted[i - 1] as any).slug;
+    (sorted[i].data as any).nextTitle = sorted[i - 1].data.title;
+  }
+  for (let i = 0; i < sorted.length - 1; i++) {
+    (sorted[i].data as any).prevSlug = (sorted[i + 1] as any).slug;
+    (sorted[i].data as any).prevTitle = sorted[i + 1].data.title;
+  }
+
+  return sorted;
+}
+
+/**
  * Retrieves and organizes blog post archives.
  *
  * This function fetches all blog posts from the "posts" collection, filters them based on the environment

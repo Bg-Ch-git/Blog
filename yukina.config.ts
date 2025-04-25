@@ -3,7 +3,7 @@ import type { Configuration } from "./src/types/config";
 
 const YukinaConfig: Configuration = {
   title: "Simulacrum",
-  subTitle: "Text imitation of my personality",
+  subTitle: "Text Imitation of my Personality",
   brandTitle: "Bg. Ch.",
 
   description: "The attempts to formulate my thoughts",

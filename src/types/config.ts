@@ -26,6 +26,16 @@ interface Configuration {
 
   banners: string[];
 
+  melodies: {
+    audioUrl: string;
+    name: string;
+    hasNotes: boolean;
+    notesUrl: string;
+  }[];
+  sourceLink: string;
+  notesLink: string;
+  isCompleted: boolean;
+
   slugMode: "HASH" | "RAW";
 
   license: {
