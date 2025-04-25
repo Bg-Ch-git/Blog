@@ -1,5 +1,5 @@
 ---
-title: Markdown Example
+title: Amantes Sunt Amentes
 published: 2023-10-01
 description: A simple example of a Markdown blog post.
 tags: [Markdown, Blogging]
@@ -33,52 +33,52 @@ Unicode is supported. ☺
 
 ## An h2 header
 
-Here's a numbered list:
+<div style="display: flex; justify-content: center; align-items: center;">
+    <p align="left">
+    Мне холодно на улице и Солнце<br/>
+    В тени равно себе вне тени<br/>
+    Хотя бы тело согревает душу
+    </p>
+</div>
 
-1. first item
-2. second item
-3. third item
+<div style="display: flex; justify-content: center; align-items: center;">
+    <p align="left">
+    Одуванчики, облетая на год вперёд,<br/>
+    обеспечивают зиму снегом:<br/>
+    семена вознаются в небосвод<br/>
+    и остротой прорастают в звёзды,<br/>
+    а пушистым — тяжёлым —  <br/>
+    тянутся вниз, к земле:<br/>
+    обретается снег.<br/>
+    Ах, было бы это правдой!<br/>
+    Мы бы в метель задохнулись.
+    </p>
+</div>
 
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
-
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
-
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
-
-```
-define foobar() {
-    print "Welcome to flavor country!";
-}
-```
-
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
-
-```python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-```
+<div style="display: flex; justify-content: center; align-items: center;">
+    <p align="left">
+    Как при крушении шторма<br/>
+    В обоюдном трепете тонут<br/>
+    Волна и корабль<br/>
+    <br/>
+    Так в истончение ночи<br/>
+    Погружались и мы<br/>
+    </p>
+</div>
 
 ### An h3 header
 
 Now a nested list:
 
-1.  First, get these ingredients:
+1. First, get these ingredients:
 
     - carrots
     - celery
     - lentils
 
-2.  Boil some water.
+2. Boil some water.
 
-3.  Dump everything in the pot and follow
+3. Dump everything in the pot and follow
     this algorithm:
 
         find wooden spoon

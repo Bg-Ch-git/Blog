@@ -2,11 +2,11 @@ import I18nKeys from "./src/locales/keys";
 import type { Configuration } from "./src/types/config";
 
 const YukinaConfig: Configuration = {
-  title: "Name",
-  subTitle: "Blog for long posts",
+  title: "Simulacrum",
+  subTitle: "Text imitation of my personality",
   brandTitle: "Bg. Ch.",
 
-  description: "Instead Telegram",
+  description: "The attempts to formulate my thoughts",
 
   //TODO: add new URL
   site: "https://yukina-blog.vercel.app",
@@ -27,26 +27,22 @@ const YukinaConfig: Configuration = {
       href: "/about",
     },
     {
-      nameKey: I18nKeys.nav_bar_github,
-      href: "https://github.com/Bg-Ch-git/Blog",
+      nameKey: I18nKeys.nav_bar_repository,
+      href: "/repository",
     },
   ],
 
   username: "Bg. Ch.",
-  sign: "Just a sweet Bun",
+  sign: "Mathematician, Quasi-Musician, Pseudo-Intellectual and just a Sweet Bun",
   avatarUrl: "/images/avatar.jpg",
   socialLinks: [
     {
-      icon: "line-md:github-loop",
-      link: "https://github.com/WhitePaper233",
+      icon: "mdi:youtube",
+      link: "https://www.youtube.com/@Bg.Ch.youTube",
     },
     {
-      icon: "mingcute:bilibili-line",
-      link: "https://space.bilibili.com/22433608",
-    },
-    {
-      icon: "mingcute:netease-music-line",
-      link: "https://music.163.com/#/user/home?id=125291648",
+      icon: "tabler:brand-telegram",
+      link: "https://t.me/Bg_Ch_and_other_sweet_buns",
     },
   ],
   maxSidebarCategoryChip: 6, // It is recommended to set it to a common multiple of 2 and 3

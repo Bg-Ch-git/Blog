@@ -9,7 +9,7 @@ export type Translation = {
 
 const map: { [key: string]: Translation } = {
   en: en,
-  "zh-cn": zh_CN,
+  //"zh-cn": zh_CN,
 };
 
 export function getTranslation(lang: string): Translation {
